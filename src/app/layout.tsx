@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
+import { PhoenixTracker } from "@/components/PhoenixTracker";
 const montserrat = Montserrat({
   variable: "--font-heading",
   subsets: ["latin"],
@@ -47,7 +48,8 @@ export default function RootLayout({
               <Sonner />
             </TooltipProvider>
           </ThemeProvider>
-        </QueryProvider>
+        </QueryProvider>        <PhoenixTracker />
+
       </body>
     </html>
   );
